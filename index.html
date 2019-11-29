@@ -1,15 +1,40 @@
-<div > 
-  <textarea id="textArea"
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/7b827b3a24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div.absolute {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+}> 
+  <input id="textArea"
+  type="email"
   rows="1" 
-  cols="20">
-  </textarea>  
+  cols="20"
+  style="color:white; background-color:black;"
+  onmouseover=showIcon()
+  placeholder="Enter some text"
+  >
+  </input>  
 </div>
 
-<div>
-  <input id="button"
-  style="color:white; background-color:black;" 
-  type="button" 
-  value="Copy" 
+<div.absolute {
+  id="icon";
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  hidden
+}>
+  <i class="fas fa-copy"  
   onclick=copyToClipboard()
+  onmouseover=showIcon()
+  onmouseout=hideIcon()
   >
+  </i>
 </div>
+</body>
+</html>
+</head>
